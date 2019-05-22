@@ -73,6 +73,13 @@ text_to_encode = input("Podaj tekst który chcesz zakodować: ")
 encoded_text = encode(text_to_encode)
 print("=======================================================\n")
 input("Aby rozpocząć dekodowanie wciśnij enter\n")
-decode(encoded_text)
+print(f"\nSformatowane kodowanie")
+print(*encoded_text)
+# decode(encoded_text)
+
+
+to_decode = input("Podaj tekst do zdekodowania: (format -> indeks:>litera):  ")
+to_decode2 = to_decode.split(" ")
+decode(to_decode2)
 
 # a-bar-array-by-barrayar-bay
